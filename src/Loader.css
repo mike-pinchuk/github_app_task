@@ -1,0 +1,23 @@
+.Loader {
+  background-color: #4c4b4d;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 0 auto;
+}
+
+.Loader-search{
+    width: 30%;
+    flex: 1 0 auto;
+}
+
+.Loader-search input {
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    font-size: 15px;
+}
+
+.Loader-result {
+    width: 70%;
+    flex: 1 1 auto;
+}

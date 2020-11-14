@@ -1,9 +1,9 @@
 import { LOADING } from "../actions/types";
 
-export function loading(value) {
+export function loading(newLoad) {
   return {
     type: LOADING,
-    payload: value,
+    payload: newLoad,
   };
 }
 
