@@ -18,7 +18,7 @@ const Loader = () => {
         history.map((e) => {
           return (
             <div className="history">
-              <ul >
+              <ul>
                 <p key={e.id}>{e}</p>
               </ul>
             </div>
@@ -36,7 +36,6 @@ const Loader = () => {
     return fetch(url1, {
       headers: {
         accept: "application/json",
-        Authorization: "52dddec49bffe9199fb466cf4a0cd21881bbfb4d",
       },
     })
       .then((response) => response.json())
