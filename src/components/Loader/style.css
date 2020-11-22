@@ -1,0 +1,88 @@
+.Loader {
+  background-color: #4c4b4d;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 0 auto;
+  height: auto;
+}
+
+.Loader-search {
+  width: 30%;
+}
+
+.Loader-search input {
+  border-radius: 15px;
+  border: none;
+  height: 25px;
+  font-size: 15px;
+}
+
+.Loader-result {
+  display: flex;
+  width: 70%;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  margin: 20px;
+  padding-left: 20px;
+  width: 310px;
+  height: 110px;
+  border-radius: 10px;
+  color: #636363;
+  text-align: left;
+  font-size: 12px;
+}
+
+.results {
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 200px;
+    height: 130px;
+  }
+
+  .Loader-result {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 200px;
+    height: 130px;
+  }
+
+  .Loader-result {
+    justify-content: center;
+  }
+
+  .Loader-search input {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Loader {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .Loader-search input {
+    width: 80px;
+  }
+
+  .card {
+    width: 200px;
+    height: 130px;
+  }
+
+  .Loader-result {
+    justify-content: center;
+  }
+}

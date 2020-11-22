@@ -1,9 +1,6 @@
 import React from "react";
-import { Provider } from "react-redux";
 import "./App.css";
-// import Loader from "./components/Loader";
-import store from "../src/store/store";
-import Loader from "./components/wrappedComponent/Loader_w";
+import Loader from "./components/Loader/index";
 
 function App() {
   return (
@@ -12,16 +9,17 @@ function App() {
         <div className="App-header-wrapper">
           <div className="App-header__left">
             <div className="App-header__left-icon">
-              <a href="https://requestum.com/">
+              <a href="https://github.com/mike-pinchuk/github_app_task.git">
                 <img
-                  src="https://media-exp1.licdn.com/dms/image/C4E0BAQF9lXbU0ZvPKA/company-logo_200_200/0?e=2159024400&v=beta&t=DY8XvbP8swTlUrE3xCC-a7nMIp0TmnGJDe1nSTa6wBM"
-                  alt=""
+                  src="https://avatars1.githubusercontent.com/u/9919?s=200&v=4"
+                  alt="icon of github website"
+                  title="Click on me to review the code of this app"
                 />
               </a>
             </div>
             <div className="App-header__left-text">
-              <h1>Requestum</h1>
-              <p>Web development company</p>
+              <h1>GitHub Search Appliacation</h1>
+              <p>Find interesting repositories</p>
             </div>
           </div>
           <div className="App-header__right">
@@ -30,12 +28,8 @@ function App() {
         </div>
         <hr />
       </div>
-      <div className="App-main">
-        <Provider store={store}>
-          <Loader />
-        </Provider>
-      </div>
-      <div className="App-footer">Footer</div>
+      <Loader />
+      <div className="App-footer"></div>
     </div>
   );
 }
